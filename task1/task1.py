@@ -1,8 +1,7 @@
 import sys
-from typing import Iterable
 
 
-def get_args() -> Iterable:
+def get_args() -> list:
     args = [int(x) for x in sys.argv[1:]]
     return args
 

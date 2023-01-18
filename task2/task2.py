@@ -1,6 +1,6 @@
 import math
 import sys
-from typing import Iterable, List
+from typing import List
 
 
 class Circle:
@@ -10,7 +10,7 @@ class Circle:
         self.radius = radius
 
     def check(self, x, y) -> int:
-        center_distance = math.sqrt((x - self.x) ** 2 + (y - self.y) ** 2)
+        center_distance = math.sqrt((x - self.x)**2 + (y - self.y)**2)
         if center_distance == self.radius:
             point_result = 0
         elif center_distance < self.radius:
@@ -20,7 +20,7 @@ class Circle:
         return point_result
 
 
-def get_args() -> Iterable:
+def get_args() -> list:
     args = [x for x in sys.argv[1:]]
     return args
 

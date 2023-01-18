@@ -1,9 +1,9 @@
 import json
 import sys
-from typing import Dict, Iterable, List, Union
+from typing import Dict, List, Union
 
 
-def get_args() -> Iterable:
+def get_args() -> list:
     args = [x for x in sys.argv[1:]]
     return args
 
